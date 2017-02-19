@@ -3,11 +3,13 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: When we see 2 same elements in the same unit, only these units are able to use these 2 elements.
+   So we delete these 2 elements in all the other boxes in this unit to reduce their search space.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: Use constraints in diagonal boxes D to reduce the search space of the other diagonal boxes peers[D1].
+	We add diagonal boxes to units and peers in solution.py for use in naked_twins,eliminate,only_choice and other methods used in the original sudoku.
 
 ### Install
 
